@@ -1,6 +1,6 @@
 
-app.controller('FriendController', function($scope) {
-  var friends = [
+friendApp.controller('FriendController', function($scope) {
+  $scope.friends = [
     {
       "name": "Preston McNeil",
       "pic_square": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/1117694_1614542_108355616_q.jpg",
@@ -431,6 +431,6 @@ app.controller('FriendController', function($scope) {
       "friend_count": 855,
       "$$hashKey": "02U"
     }
-  ]
-  $scope.friends = friends;
+  ];
+  // $scope.friends = friends;
 });
