@@ -80,3 +80,7 @@ ul{
 .hashtag {
 	font-weight: bold
 }
+/*ng-cloak to hide Angular flicker*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
+    display: none !important;
+}

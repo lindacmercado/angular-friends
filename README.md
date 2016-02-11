@@ -41,7 +41,7 @@ We will also create a location search input.
 * Create two variables in your friend controller, one for the attribute to sort on and another boolean for an ascending vs descending sort
 * Add a value="" to each item in the list of options. This value needs to equal the value of the property, on each object, in your array that you want to sort by
 * Bind the variables to their respective select elements using ng-model
-* Add the ordering logic to your filter 
+* Add the ordering logic to your filter
 ** Sample syntax      | orderBy: propertyName : isReversed
 ** See https://docs.angularjs.org/api/ng/filter/orderBy
 
@@ -50,14 +50,14 @@ We will also create a location search input.
 * With the current format any friend with a null value on current_location is filtered out and lost as soon as any filter is applied.  The data we gave you was an example you may find yourself with coming from a 3rd party where the data is not consistent across objects.  Write a for loop or use the .map function on array to find and replace any missing current location properties with an empty object with a property that matches the property you are using for your location filter.
 
     IE - If I was filtering by current\_location.name I would find current\_location: null and replace it with
-    
-      current_location: { 
-      
+
+      current_location: {
+
           name: ''
-          
+
       }
 
-    
+
 
 ##Resources
 * Controller scopes http://jsfiddle.net/8pX7p/
