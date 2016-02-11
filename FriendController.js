@@ -1,6 +1,9 @@
 
 friendApp.controller('FriendController', function($scope) {
 
+$scope.search = $scope.friends;
+$scope.descending = false;
+$scope.ascending = true;
 //does it make a difference if I call here or create var friend = []
 //here and call at end with $scope.friend = friend??
   $scope.friends = [
@@ -435,5 +438,5 @@ friendApp.controller('FriendController', function($scope) {
       "$$hashKey": "02U"
     }
   ];
-  $scope.current_location = $scope.friends.current_location.name;
+
 });
